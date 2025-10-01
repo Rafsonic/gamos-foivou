@@ -1,0 +1,186 @@
+import { Slide } from "react-awesome-reveal";
+import SectionTitle from "../SectionTitle";
+import sImg1 from "../../images/event/1.jpg";
+import sImg2 from "../../images/event/2.jpg";
+import sImg3 from "../../images/event/3.jpg";
+import LocationMap from "./Modal";
+import { Clock2 } from "lucide-react";
+import { useTranslation } from "react-i18next";
+
+const EventSection = (props) => {
+  const { t } = useTranslation();
+
+  const zomataLovationFoivou = () => {
+    return (
+      <>
+        <span>{t("fivos.span1")} </span>
+        <br />
+        <span>{t("fivos.span2")}</span> <br /> <span>Τ.Κ. 3047</span>
+      </>
+    );
+  };
+
+  const zomataLovationChristianas = () => {
+    return (
+      <>
+        <span>{t("xristiana.span1")} </span>
+        <br />
+        <span>{t("xristiana.span2")}</span>
+      </>
+    );
+  };
+
+  const zomataLovationEkklisias = () => {
+    return (
+      <>
+        <span>{t("ekklisia.span1")}</span>
+        <br />
+        <span>{t("ekklisia.span2")}</span>
+      </>
+    );
+  };
+
+  const sixaritiria = () => {
+    return (
+      <>
+        <span>{t("sixaritiria.span1")} </span>
+        {/* <br /> */}
+        {/* <span>Agia Fila</span> */}
+      </>
+    );
+  };
+
+  const dipno = () => {
+    return (
+      <>
+        <span>OPUS Event Venue</span>
+        <br />
+        <span>Eleftherias 132, Limassol</span>
+      </>
+    );
+  };
+
+  const Events = [
+    {
+      Simg: sImg1,
+      title: t("fivos.title"),
+      li1: "12:00 PM ",
+      li2: zomataLovationFoivou(),
+      animation: "1200",
+      link: "https://maps.app.goo.gl/FmA91uQFGrxBd8nn7",
+    },
+    {
+      Simg: sImg2,
+      title: t("xristiana.title"),
+      li1: "14:30 PM",
+      li2: zomataLovationChristianas(),
+      animation: "1400",
+      link: "https://maps.app.goo.gl/kVuZhdutJhM2Z55H6",
+    },
+    {
+      Simg: sImg3,
+      title: t("ekklisia.title"),
+      li1: "16:30 PM",
+      li2: zomataLovationEkklisias(),
+      animation: "1600",
+      link: "https://maps.app.goo.gl/AeVF8n3jw8BKvL9u9",
+    },
+  ];
+
+  const SecondEvents = [
+    {
+      Simg: sImg3,
+      title: t("sixaritiria.title"),
+      li1: "18:00 - 19:00",
+      li2: sixaritiria(),
+      animation: "1800",
+      link: "https://maps.app.goo.gl/AeVF8n3jw8BKvL9u9",
+    },
+    {
+      Simg: sImg3,
+      title: t("dinner.title"),
+      li1: "20:30",
+      li2: dipno(),
+      animation: "2000",
+      link: "https://maps.app.goo.gl/Qm5ypHVgfYkqPk4f7",
+    },
+  ];
+
+  return (
+    <section className="wpo-event-section section-padding" id="event">
+      <div className="container">
+        <SectionTitle subTitle={t("our_wedding")} MainTitle={t("when_where")} />
+        <div className="wpo-event-wrap">
+          <div className="row">
+            {Events.map((event, eitem) => (
+              <div className="col col-lg-4 col-md-6 col-12" key={eitem}>
+                <Slide
+                  direction="up"
+                  duration={event.animation}
+                  triggerOnce="true"
+                >
+                  <div className="wpo-event-item">
+                    {/* <div className="wpo-event-img"> */}
+                    {/* <div className="wpo-event-img-inner">
+                        <img src={event.Simg} alt="" />
+                      </div> */}
+                    {/* </div> */}
+                    <div className="wpo-event-text">
+                      <div className="title">
+                        <h2>{event.title}</h2>
+                      </div>
+                      <ul>
+                        <li className="">
+                          <Clock2 size={20} /> {event.li1}
+                        </li>
+                        <li>{event.li2}</li>
+                        <li>
+                          <LocationMap link={event.link} />
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </Slide>
+              </div>
+            ))}
+          </div>
+          <div className="row">
+            {SecondEvents.map((event, eitem) => (
+              <div className="col col-lg-6 col-md-6 col-12" key={eitem}>
+                <Slide
+                  direction="up"
+                  duration={event.animation}
+                  triggerOnce="true"
+                >
+                  <div className="wpo-event-item">
+                    {/* <div className="wpo-event-img"> */}
+                    {/* <div className="wpo-event-img-inner">
+                        <img src={event.Simg} alt="" />
+                      </div> */}
+                    {/* </div> */}
+                    <div className="wpo-event-text">
+                      <div className="title">
+                        <h2>{event.title}</h2>
+                      </div>
+                      <ul>
+                        <li className="">
+                          <Clock2 size={20} /> {event.li1}
+                        </li>
+                        <li>{event.li2}</li>
+                        <li>
+                          <LocationMap link={event.link} />
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </Slide>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default EventSection;
