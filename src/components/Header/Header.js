@@ -20,9 +20,7 @@ const Header = (props) => {
           <div className="container-fluid">
             <div className="row align-items-center">
               <div className="col-lg-3 col-md-3 col-3 d-lg-none dl-block">
-                <div className="mobail-menu">
-                  <MobileMenu />
-                </div>
+                <div className="mobail-menu">{/* <MobileMenu /> */}</div>
               </div>
               <div className="col-lg-12 col-md-6 col-6 d-lg-none">
                 <div className="navbar-header text-center">
