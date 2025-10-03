@@ -9,6 +9,7 @@ import shape4 from "../../images/slider/shape4.svg";
 import shape5 from "../../images/slider/shape5.svg";
 import shape6 from "../../images/slider/shape6.svg";
 import bgshape from "../../images/slider/bg-shape.png";
+import test from "../../images/aaa/test.png";
 import TimeCountDown from "../countdown";
 import { useTranslation } from "react-i18next";
 
@@ -25,7 +26,13 @@ const Hero2 = () => {
                 <div className="wpo-static-hero-inner">
                   <div className="shape-1">
                     <Slide direction="up" duration="1000" triggerOnce="true">
-                      <img src={shape1} alt="" />
+                      {/* <img src={shape1} alt="" /> */}
+                      <img
+                        src={test}
+                        alt="a"
+                        height={180}
+                        style={{ transform: "rotate(20deg)" }}
+                      />
                     </Slide>
                   </div>
                   <div className="slide-title">
@@ -54,7 +61,7 @@ const Hero2 = () => {
                   </div>
                   <div className="shape-2">
                     <Slide direction="up" duration="1800" triggerOnce="true">
-                      <img src={shape2} alt="" />
+                      <img src={shape1} alt="" style={{ marginTop: "5rem" }} />
                     </Slide>
                   </div>
                   <div className="clearfix"></div>

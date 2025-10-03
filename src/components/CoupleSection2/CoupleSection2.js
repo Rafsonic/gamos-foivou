@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import coupleImg1 from "../../images/aaa/x.jpg";
-import coupleImg2 from "../../images/couple/2.jpg";
+import coupleImg2 from "../../images/aaa/foivos2.jpg";
 import bg from "../../images/couple/image-bg.svg";
 import { useTranslation } from "react-i18next";
 

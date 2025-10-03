@@ -1276,6 +1276,11 @@
     margin: 0 auto;
     margin-bottom: 30px;
 
+    @media (max-width: 757px) {
+      margin-top: 2rem;
+      /* font-size: 30px; */
+    }
+
     .wpo-event-img {
       max-width: 340px;
       margin: 0 auto;
