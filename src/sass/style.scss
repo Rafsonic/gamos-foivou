@@ -4,7 +4,6 @@ Theme Name:     Habibi - Wedding & Wedding Planner HTML5 Template
 Version:        1.0.0
 -------------------------------------------------------------------*/
 
-
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
@@ -130,7 +129,6 @@ Version:        1.0.0
 
 ----------------------------------------------------------------*/
 
-
 /*------------------------------------------------------------------
 1. General
 ----------------------------------------------------------------*/
@@ -141,7 +139,6 @@ Version:        1.0.0
 
 // base
 @import "base/base";
-
 
 // components
 @import "components/section-title";
@@ -161,7 +158,6 @@ Version:        1.0.0
 
 // components
 @import "components/sticky-header";
-
 
 // page
 @import "page/home-default";
@@ -198,7 +194,6 @@ Version:        1.0.0
 
 @import "page/_cart";
 
-
 @import "page/_checkout";
 
 @import "page/_shop";
@@ -218,3 +213,50 @@ Version:        1.0.0
 @import "page/_error-404";
 
 @import "page/_preview";
+
+@import "gothic.css";
+
+.gold {
+  color: #ccbfa3 !important;
+}
+
+.cha {
+  font-family: "Champagne & Limousines" !important;
+}
+
+div,
+span,
+h1,
+h2,
+p,
+.gothic {
+  font-family: "Gothic" !important;
+}
+
+@font-face {
+  font-family: "Champagne & Limousines";
+  src: url("./Champagne & Limousines.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Champagne & Limousines";
+  src: url("./Champagne & Limousines Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Champagne & Limousines";
+  src: url("./Champagne & Limousines Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Champagne & Limousines";
+  src: url("./Champagne & Limousines Bold Italic.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+}

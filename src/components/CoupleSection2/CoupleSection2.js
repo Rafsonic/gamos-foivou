@@ -41,25 +41,6 @@ const CoupleSection2 = (props) => {
                 <div className="couple-text">
                   <h3>{t("f.name")}</h3>
                   <p>{t("f.a")}</p>
-                  <div className="social">
-                    <ul>
-                      <li>
-                        <Link to="/home-2">
-                          <i className="ti-facebook"></i>
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="/home-2">
-                          <i className="ti-twitter-alt"></i>
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="/home-2">
-                          <i className="ti-instagram"></i>
-                        </Link>
-                      </li>
-                    </ul>
-                  </div>
                 </div>
               </div>
             </div>

@@ -30,14 +30,19 @@ const Hero2 = () => {
                   </div>
                   <div className="slide-title">
                     <Slide direction="up" duration="1200" triggerOnce="true">
-                      <h2 className="primary-color">{t("hero_title")}</h2>
+                      <h2 style={{ fontWeight: "bold" }} className="gold cha">
+                        {t("hero_title")}
+                      </h2>
                     </Slide>
                   </div>
                   <div className="slide-text">
                     <Slide direction="up" duration="1400" triggerOnce="true">
-                      <p>{t("hero_subtitle")}</p>
+                      <p style={{ fontFamily: "Gothic" }}>
+                        {t("hero_subtitle")}
+                      </p>
                     </Slide>
                   </div>
+
                   <div className="wpo-wedding-date">
                     <Slide direction="up" duration="1600" triggerOnce="true">
                       <div className="clock-grids">
