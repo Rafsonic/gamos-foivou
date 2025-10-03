@@ -59,7 +59,7 @@ const Hero2 = () => {
                       </div>
                     </Slide>
                   </div>
-                  <div className="shape-2">
+                  <div className="shape-2 hideonmobile">
                     <Slide direction="up" duration="1800" triggerOnce="true">
                       <img src={shape1} alt="" style={{ marginTop: "5rem" }} />
                     </Slide>

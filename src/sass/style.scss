@@ -232,6 +232,23 @@ p,
 .gothic {
   font-family: "Gothic" !important;
 }
+.hideonmobile {
+  @media (max-width: 757px) {
+    display: none;
+  }
+}
+
+.static-hero-right {
+  @media (max-width: 757px) {
+    margin-top: 3rem !important;
+  }
+}
+
+@media (max-width: 757px) {
+  .wpo-static-hero-inner {
+    padding-top: 26px !important;
+  }
+}
 
 @font-face {
   font-family: "Champagne & Limousines";
