@@ -6,6 +6,11 @@ import sImg3 from "../../images/event/3.jpg";
 import LocationMap from "./Modal";
 import { Clock2 } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import bow from "../../images/icons/bow-tie.svg";
+import shoe from "../../images/icons/bridal-shoe.svg";
+import church from "../../images/icons/church.svg";
+import wedding from "../../images/icons/wedding.svg";
+import cake from "../../images/icons/cake.svg";
 
 const EventSection = (props) => {
   const { t } = useTranslation();
@@ -68,6 +73,7 @@ const EventSection = (props) => {
       li2: zomataLovationFoivou(),
       animation: "1200",
       link: "https://maps.app.goo.gl/FmA91uQFGrxBd8nn7",
+      icon: <img src={bow} alt="Bow tie" height={70} />,
     },
     {
       Simg: sImg2,
@@ -76,6 +82,7 @@ const EventSection = (props) => {
       li2: zomataLovationChristianas(),
       animation: "1400",
       link: "https://maps.app.goo.gl/kVuZhdutJhM2Z55H6",
+      icon: <img src={shoe} alt="shoe" height={65} />,
     },
     {
       Simg: sImg3,
@@ -84,6 +91,7 @@ const EventSection = (props) => {
       li2: zomataLovationEkklisias(),
       animation: "1600",
       link: "https://maps.app.goo.gl/AeVF8n3jw8BKvL9u9",
+      icon: <img src={church} alt="church" height={70} />,
     },
   ];
 
@@ -95,6 +103,7 @@ const EventSection = (props) => {
       li2: sixaritiria(),
       animation: "1800",
       link: "https://maps.app.goo.gl/AeVF8n3jw8BKvL9u9",
+      icon: <img src={wedding} alt="wedding" height={70} />,
     },
     {
       Simg: sImg3,
@@ -103,6 +112,7 @@ const EventSection = (props) => {
       li2: dipno(),
       animation: "2000",
       link: "https://maps.app.goo.gl/Qm5ypHVgfYkqPk4f7",
+      icon: <img src={cake} alt="cake" height={70} />,
     },
   ];
 
@@ -127,6 +137,7 @@ const EventSection = (props) => {
                     {/* </div> */}
                     <div className="wpo-event-text">
                       <div className="title">
+                        {event.icon}
                         <h2>{event.title}</h2>
                       </div>
                       <ul>
@@ -160,6 +171,7 @@ const EventSection = (props) => {
                     {/* </div> */}
                     <div className="wpo-event-text">
                       <div className="title">
+                        {event.icon}
                         <h2>{event.title}</h2>
                       </div>
                       <ul>

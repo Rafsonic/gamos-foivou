@@ -1311,14 +1311,16 @@
     .wpo-event-text {
       h2 {
         padding: 10px 0;
-        background: $theme-primary-color-s3;
+        /* background: $theme-primary-color-s3; */
         font-size: 35px;
         font-style: normal;
-        font-weight: 400;
+        font-weight: 600;
         line-height: normal;
-        color: $white;
+        /* color: $white; */
+        color: #737a5d;
 
         @media (max-width: 757px) {
+          /* margin-top: 2rem; */
           font-size: 30px;
         }
       }

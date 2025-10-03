@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import MobileMenu from "../MobileMenu/MobileMenu";
+import { useTranslation } from "react-i18next";
 
 const Header = (props) => {
   const [menuActive, setMenuState] = useState(false);
@@ -12,6 +13,8 @@ const Header = (props) => {
   const ClickHandler = () => {
     window.scrollTo(10, 0);
   };
+
+  const { t } = useTranslation();
 
   return (
     <header id="header" className={props.topbarNone}>
@@ -29,7 +32,8 @@ const Header = (props) => {
                     className="navbar-brand"
                     to="/home"
                   >
-                    Foivos & Xristiana
+                    {t("hero_title")}
+                    {/* Foivos & Xristiana */}
                   </Link>
                 </div>
               </div>
