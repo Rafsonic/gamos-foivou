@@ -9,6 +9,7 @@ import EventSection from "../../components/EventSection/EventSection";
 import BlogSection from "../../components/BlogSection/BlogSection";
 import Footer from "../../components/footer/Footer";
 import Scrollbar from "../../components/scrollbar/scrollbar";
+import CloudinaryUpload from "./upload";
 
 const HomePage = () => {
   return (
@@ -23,6 +24,8 @@ const HomePage = () => {
       {/* <RsvpSection /> */}
       {/* <Footer /> */}
       <Scrollbar />
+
+      <CloudinaryUpload />
     </Fragment>
   );
 };

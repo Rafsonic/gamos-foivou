@@ -244,6 +244,16 @@ p,
   }
 }
 
+.uploadimg {
+  width: 100%;
+  background: #ccbfa3;
+  text: black;
+  font-weight: bold;
+  border: 0;
+  height: 6rem;
+  margin-bottom: 4rem;
+}
+
 @media (max-width: 757px) {
   .wpo-static-hero-inner {
     padding-top: 26px !important;
