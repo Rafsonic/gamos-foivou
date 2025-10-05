@@ -1,10 +1,10 @@
 {
   "hero_title": "Φοίβος & Χριστιάνα",
   "hero_subtitle": "Παντρευόμαστε το Σάββατο, 11 Οκτωβρίου 2025",
-  "days": "Ημέρες",
-  "hours": "Ώρες",
-  "mins": "Λεπτά",
-  "sec": "Δευτερόλεπτα",
+  "days": "Days",
+  "hours": "Hours",
+  "mins": "Mins",
+  "sec": "Secs",
   "our_wedding": "Ο Γάμος μας",
   "when_where": "Πότε & Πού",
   "fivos": {

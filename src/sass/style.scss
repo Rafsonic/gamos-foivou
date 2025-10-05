@@ -287,3 +287,11 @@ p,
   font-weight: 700;
   font-style: italic;
 }
+
+#lng-picker button {
+  border: 0;
+  background: transparent;
+  position: absolute;
+  left: 5px;
+  top: 24px;
+}
