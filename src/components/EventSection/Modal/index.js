@@ -2,7 +2,13 @@ import React, { Fragment } from "react";
 
 import { Button } from "@mui/material";
 
-const LocationMap = ({ maxWidth, button, buttonClass, link }) => {
+const LocationMap = ({
+  maxWidth,
+  button,
+  buttonClass,
+  link,
+  label = "See Location",
+}) => {
   function handleClickOpen() {
     window.open(link, "_blank", "noopener,noreferrer");
   }
@@ -11,7 +17,7 @@ const LocationMap = ({ maxWidth, button, buttonClass, link }) => {
     <Fragment>
       <Button className={`btn ${buttonClass}`} onClick={handleClickOpen}>
         {button}
-        See Location
+        {label}
       </Button>
     </Fragment>
   );

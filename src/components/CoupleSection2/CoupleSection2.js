@@ -22,8 +22,8 @@ const CoupleSection2 = (props) => {
                     <img src={bg} alt="" />
                   </div>
                 </div>
-                <div className="couple-text">
-                  <h3>{t("x.name")}</h3>
+                <div className="couple-text cha">
+                  <h3 className="gothic ">{t("x.name")}</h3>
                   <p>{t("x.content")}</p>
                 </div>
               </div>
@@ -39,7 +39,7 @@ const CoupleSection2 = (props) => {
                   </div>
                 </div>
                 <div className="couple-text">
-                  <h3>{t("f.name")}</h3>
+                  <h3 className="gothic">{t("f.name")}</h3>
                   <p>{t("f.a")}</p>
                 </div>
               </div>

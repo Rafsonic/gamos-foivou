@@ -189,6 +189,41 @@ const EventSection = (props) => {
               </div>
             ))}
           </div>
+          <div className="row">
+            <h2
+              className="text-center primary4 gothic"
+              style={{ fontWeight: 600, color: "#737a5d", marginTop: "1rem" }}
+            >
+              OPUS Parking Information
+            </h2>
+            <h6 className="text-center parking-description">
+              Parking will be available on a first-come, first-served basis.
+            </h6>
+            <h6 className="text-center parking-description">
+              Please present your wedding invitation to the valet staff upon
+              arrival to be granted access to the parking area
+            </h6>
+
+            <div
+              className="col col-lg-6 col-md-6 col-12 "
+              style={{ marginTop: "1rem" }}
+            >
+              <div className="text-center">
+                <LocationMap
+                  link={"https://maps.app.goo.gl/HTjE5H7F8UjveqSo6?g_st=ipc"}
+                  label="Location Parking 1"
+                  buttonClass="parking"
+                />
+              </div>
+              <div className="text-center" style={{ marginTop: "2rem" }}>
+                <LocationMap
+                  link={"https://maps.app.goo.gl/dX6Pkg3zmBS3TKJr7?g_st=ipc"}
+                  label="Location Parking 2"
+                  buttonClass="parking"
+                />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>

@@ -220,8 +220,49 @@ Version:        1.0.0
   color: #ccbfa3 !important;
 }
 
+.primary4 {
+  color: #737a5d;
+}
+
+.primary3 {
+  color: #a4ac86;
+}
+
+.bold {
+  font-weight: 600;
+}
+
 .cha {
   font-family: "Champagne & Limousines" !important;
+}
+
+.nameSize {
+  font-size: 2rem;
+}
+
+.search-input {
+  &:active {
+    border: "2px solid #A4AC86!important";
+  }
+  &:focus {
+    border: "2px solid #A4AC86!important";
+  }
+}
+
+.parking {
+  color: #a4ac86 !important;
+  font-size: 2rem !important;
+  text-transform: capitalize !important;
+  border-bottom: 2px solid #a4ac86 !important;
+}
+
+.parking-description {
+  color: #5c5c5c;
+  font-size: 20px;
+  font-family: "Gothic", "Sail", cursive !important;
+  @media (max-width: 757px) {
+    font-size: 17px !important;
+  }
 }
 
 div,
