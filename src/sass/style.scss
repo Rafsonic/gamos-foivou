@@ -253,7 +253,17 @@ Version:        1.0.0
   color: #a4ac86 !important;
   font-size: 2rem !important;
   text-transform: capitalize !important;
-  border-bottom: 2px solid #a4ac86 !important;
+  text-decoration: underline !important;
+  /* border-bottom: 2px solid #a4ac86 !important; */
+}
+
+.mpara-parking {
+  display: flex;
+  flex-direction: column;
+
+  span {
+    font-size: 20px;
+  }
 }
 
 .parking-description {

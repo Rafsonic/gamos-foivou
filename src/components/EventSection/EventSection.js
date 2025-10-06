@@ -221,12 +221,18 @@ const EventSection = (props) => {
                   buttonClass="parking"
                 />
               </div>
-              <div className="text-center" style={{ marginTop: "2rem" }}>
+              <div
+                className="text-center mpara-parking"
+                style={{ marginTop: "2rem" }}
+              >
                 <LocationMap
-                  link={"https://maps.app.goo.gl/m863xER94NUPwc4Z9?g_st=aw"}
+                  link={"https://maps.app.goo.gl/B8TFJeq7WtmwT56M8?g_st=aw"}
                   label="Location Parking 3"
                   buttonClass="parking"
                 />
+                <span>
+                  {t("parking.mpara")} <bold>6694</bold>
+                </span>
               </div>
             </div>
           </div>

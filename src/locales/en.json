@@ -40,6 +40,7 @@
   "parking": {
     "title": "OPUS Parking Information",
     "sub1": "Parking will be available on a first-come, first-served basis.",
-    "sub2": "Please present your wedding invitation to the valet staff upon arrival to be granted access to the parking area."
+    "sub2": "Please present your wedding invitation to the valet staff upon arrival to be granted access to the parking area.",
+    "mpara": "The parking barrier code is"
   }
 }
