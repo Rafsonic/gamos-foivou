@@ -10,6 +10,7 @@ import BlogSection from "../../components/BlogSection/BlogSection";
 import Footer from "../../components/footer/Footer";
 import Scrollbar from "../../components/scrollbar/scrollbar";
 import CloudinaryUpload from "./upload";
+import Tables from "./tables/tables";
 
 const HomePage = () => {
   return (
@@ -26,6 +27,7 @@ const HomePage = () => {
       <Scrollbar />
 
       <CloudinaryUpload />
+      <Tables />
     </Fragment>
   );
 };
