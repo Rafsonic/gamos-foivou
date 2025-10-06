@@ -194,14 +194,13 @@ const EventSection = (props) => {
               className="text-center primary4 gothic"
               style={{ fontWeight: 600, color: "#737a5d", marginTop: "1rem" }}
             >
-              OPUS Parking Information
+              {t("parking.title")}
             </h2>
             <h6 className="text-center parking-description">
-              Parking will be available on a first-come, first-served basis.
+              {t("parking.sub1")}
             </h6>
             <h6 className="text-center parking-description">
-              Please present your wedding invitation to the valet staff upon
-              arrival to be granted access to the parking area
+              {t("parking.sub2")}
             </h6>
 
             <div

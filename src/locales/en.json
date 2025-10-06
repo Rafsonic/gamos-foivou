@@ -36,5 +36,10 @@
   "f": {
     "name": "Foivos Heracleous",
     "a": "He loves his friends and fills their lives with joy. With vitality and energy, he is always ready for new adventures and special moments with his loved ones."
+  },
+  "parking": {
+    "title": "OPUS Parking Information",
+    "sub1": "Parking will be available on a first-come, first-served basis.",
+    "sub2": "Please present your wedding invitation to the valet staff upon arrival to be granted access to the parking area."
   }
 }
