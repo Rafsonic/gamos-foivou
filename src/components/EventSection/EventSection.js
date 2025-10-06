@@ -221,6 +221,13 @@ const EventSection = (props) => {
                   buttonClass="parking"
                 />
               </div>
+              <div className="text-center" style={{ marginTop: "2rem" }}>
+                <LocationMap
+                  link={"https://maps.app.goo.gl/m863xER94NUPwc4Z9?g_st=aw"}
+                  label="Location Parking 3"
+                  buttonClass="parking"
+                />
+              </div>
             </div>
           </div>
         </div>
