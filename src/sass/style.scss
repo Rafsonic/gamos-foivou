@@ -259,7 +259,9 @@ Version:        1.0.0
 .parking-description {
   color: #5c5c5c;
   font-size: 20px;
-  font-family: "Gothic", "Sail", cursive !important;
+  /* font-family: "Gothic", "Sail", cursive !important; */
+  font-family: "Champagne & Limousines" !important;
+
   @media (max-width: 757px) {
     font-size: 17px !important;
   }
@@ -271,7 +273,9 @@ h1,
 h2,
 p,
 .gothic {
-  font-family: "Gothic", "Sail", cursive !important;
+  font-family: "Champagne & Limousines" !important;
+  /* den einai gothic */
+  /* font-family: "Gothic", "Sail", cursive !important; */
 }
 .hideonmobile {
   @media (max-width: 757px) {

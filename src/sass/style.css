@@ -171,7 +171,9 @@ h4,
 h5,
 h6 {
   color: #101010;
-  font-family: "Sail", cursive;
+  /* font-family: "Sail", cursive; */
+    font-family: "Champagne & Limousines" !important;
+
   font-weight: 400;
 }
 
