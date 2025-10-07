@@ -1,6 +1,6 @@
 import React from "react";
 import { Slide } from "react-awesome-reveal";
-import heroImg from "../../images/aaa/foivos.jpg";
+import heroImg from "../../images/cover/3.jpg";
 import hero1 from "../../images/slider/hero-1.jpg";
 import shape1 from "../../images/slider/shape1.svg";
 import shape2 from "../../images/slider/shape2.svg";

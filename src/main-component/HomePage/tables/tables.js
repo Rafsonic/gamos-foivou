@@ -1,8 +1,10 @@
 import { useState } from "react";
 import namesListJson from "./names.json";
+import { useTranslation } from "react-i18next";
 
 const Tables = () => {
   const [searchTerm, setSearchTerm] = useState("");
+  const { t } = useTranslation();
 
   const filteredNames = namesListJson.filter((item) => {
     const search = searchTerm.toLowerCase().trim();
@@ -23,7 +25,9 @@ const Tables = () => {
         paddingRight: "50px",
       }}
     >
-      <h5 style={{ fontSize: "2rem", marginBottom: "2rem" }}>Find your seat</h5>
+      <h5 style={{ fontSize: "2rem", marginBottom: "2rem" }}>
+        {t("table.title")}
+      </h5>
       <input
         placeholder="Search name"
         className="search-input"
@@ -56,7 +60,7 @@ const Tables = () => {
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "space-between",
-                fontSize: "1.2rem",
+                fontSize: "1.3rem",
               }}
             >
               <div className="primary3 bold">{item.name}</div>

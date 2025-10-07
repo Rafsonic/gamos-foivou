@@ -204,7 +204,7 @@ const EventSection = (props) => {
             </h6>
 
             <div
-              className="col col-lg-6 col-md-6 col-12 "
+              className="col col-lg-12 col-md-12 col-12 "
               style={{ marginTop: "1rem" }}
             >
               <div className="text-center">
