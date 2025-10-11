@@ -49,12 +49,13 @@ const TimeCountDown = (props) => {
   const { t } = useTranslation();
 
   return (
-    <div className="react-countdown">
+    <div className="react-countdown" style={{ fontSize: "4rem" }}>
+      Today!
       <div className="time-section">
-        <div className="time">{state.days || "0"}</div>
-        <small className="time-text">{t("days")}</small>
+        {/* <div className="time">Today!</div> */}
+        {/* <small className="time-text">{t("days")}</small> */}
       </div>
-      <div className="time-section">
+      {/* <div className="time-section">
         <div className="time">{state.hours || "00"}</div>
         <small className="time-text">{t("hours")}</small>
       </div>
@@ -65,7 +66,7 @@ const TimeCountDown = (props) => {
       <div className="time-section">
         <div className="time">{state.seconds || "00"}</div>
         <small className="time-text">{t("sec")}</small>
-      </div>
+      </div> */}
     </div>
   );
 };
